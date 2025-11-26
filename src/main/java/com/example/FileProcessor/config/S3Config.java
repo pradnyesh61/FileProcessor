@@ -1,4 +1,4 @@
-package com.example.FileProcessor.Config;
+package com.example.FileProcessor.config;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
