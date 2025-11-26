@@ -36,7 +36,7 @@ public class S3Controller {
     public ResponseEntity<FileResponse> upload(@RequestParam(FILE) MultipartFile file) throws IOException {
         LOGGER.info("Uploading file: {}", file.getOriginalFilename());
         s3Service.uploadFile(file);
-        return new ResponseEntity<>(new FileResponse(SUCCESS, FILE_UPLOAD_SUCCESS + SEMI_COLON + file.getOriginalFilename()), HttpStatus.CREATED);
+        return new ResponseEntity<>(new FileResponse(SUCCESS, FILE_UPLOAD_SUCCESS + SEMI_COLON + file.getOriginalFilename()), HttpStatus.OK);
     }
 
     @GetMapping("/files")

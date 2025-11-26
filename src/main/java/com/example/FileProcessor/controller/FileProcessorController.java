@@ -30,7 +30,7 @@ public class FileProcessorController {
     @PostMapping("file/upload")
     public ResponseEntity<FileResponse> fileUpload(@RequestParam(FILE) MultipartFile file) throws IOException {
         String fileName = fileService.uploadFile(file);
-        return new ResponseEntity<>(new FileResponse(SUCCESS,FILE_UPLOAD_SUCCESS+SEMI_COLON+fileName), HttpStatus.CREATED);
+        return new ResponseEntity<>(new FileResponse(SUCCESS,FILE_UPLOAD_SUCCESS+SEMI_COLON+fileName), HttpStatus.OK);
 
     }
 
