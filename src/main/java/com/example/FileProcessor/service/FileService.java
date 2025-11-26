@@ -1,6 +1,6 @@
-package com.example.FileProcessor.Service;
+package com.example.FileProcessor.service;
 
-import com.example.FileProcessor.Model.FileInfo;
+import com.example.FileProcessor.model.FileInfo;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.FileNotFoundException;

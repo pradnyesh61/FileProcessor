@@ -1,6 +1,6 @@
-package com.example.FileProcessor.ExceptionController;
+package com.example.FileProcessor.exceptionController;
 
-import com.example.FileProcessor.Model.ApiError;
+import com.example.FileProcessor.model.ApiError;
 import org.apache.coyote.BadRequestException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,8 +12,9 @@ import org.springframework.web.multipart.MultipartException;
 import java.io.FileNotFoundException;
 import java.nio.file.FileAlreadyExistsException;
 
-import static com.example.FileProcessor.Constant.ApplicationConstant.BAD_REQUEST;
-import static com.example.FileProcessor.Constant.ApplicationMessages.*;
+import static com.example.FileProcessor.constant.ApplicationConstant.BAD_REQUEST;
+import static com.example.FileProcessor.constant.ApplicationMessages.*;
+
 
 @RestControllerAdvice
 public class exceptionController {
@@ -23,7 +24,7 @@ public class exceptionController {
     @ExceptionHandler(FileNotFoundException.class)
     public ResponseEntity<ApiError> handleFileNotFoundException(FileNotFoundException e)
     {
-        LOGGER.error("Error -> {}",e.getMessage());
+        LOGGER.error("ERROR -> {}",e.getMessage());
         return generateResponse(HttpStatus.NOT_FOUND,FOLDER_NOT_FOUND, String.valueOf(e));
     }
 

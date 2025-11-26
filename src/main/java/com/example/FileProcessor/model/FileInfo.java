@@ -1,4 +1,4 @@
-package com.example.FileProcessor.Model;
+package com.example.FileProcessor.model;
 
 public class FileInfo {
 

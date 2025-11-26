@@ -1,7 +1,7 @@
-package com.example.FileProcessor.Service.Impl;
+package com.example.FileProcessor.service.Impl;
 
-import com.example.FileProcessor.Model.FileInfo;
-import com.example.FileProcessor.Service.FileService;
+import com.example.FileProcessor.model.FileInfo;
+import com.example.FileProcessor.service.FileService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,7 +16,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.example.FileProcessor.Constant.ApplicationMessages.FOLDER_NOT_FOUND;
+import static com.example.FileProcessor.constant.ApplicationMessages.FOLDER_NOT_FOUND;
+
 
 @Service
 public class FileServiceImpl implements FileService {

@@ -1,8 +1,8 @@
-package com.example.FileProcessor.Constant;
+package com.example.FileProcessor.constant;
 
 public class ApplicationMessages {
 
-    public static final String FILE_UPLOAD_SUCCESS = "File Upload Successfully";
+    public static final String FILE_UPLOAD_SUCCESS = "File uploaded successfully!";
 
     public static final String FILE_ALREADY_EXIST = "File already exist at file Path";
 
