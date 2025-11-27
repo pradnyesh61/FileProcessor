@@ -1,7 +1,10 @@
 package com.example.FileProcessor.service.Impl;
 
+import com.example.FileProcessor.controller.FileProcessorController;
 import com.example.FileProcessor.model.FileInfo;
 import com.example.FileProcessor.service.FileService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -22,6 +25,8 @@ import static com.example.FileProcessor.constant.ApplicationMessages.FOLDER_NOT_
 @Service
 public class FileServiceImpl implements FileService {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(FileServiceImpl.class);
+
     @Value("${file.storage.path}")
     private String path;
 
@@ -35,11 +40,13 @@ public class FileServiceImpl implements FileService {
         isFolderPresent(true);
 
         Files.copy(file.getInputStream(), Paths.get(filePath));
+        LOGGER.info("File {} copied to local folder.", file.getOriginalFilename());
 
         return fileName;
     }
 
     private void isFolderPresent(boolean isFileUploadRequest) throws FileNotFoundException {
+        LOGGER.info("Check if folder is present or not, if not and request is of upload file then create the folder else throwing not found exception");
         File folderPath = new File(path);
         if (!folderPath.exists()) {
             if (!isFileUploadRequest) {
