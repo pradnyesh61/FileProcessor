@@ -34,7 +34,10 @@ This project demonstrates clean code structure, S3 integration, global exception
 
 
 ## Flow Diagram
-<img width="1977" height="1412" alt="untitled (4)" src="https://github.com/user-attachments/assets/619f91a1-67de-49c3-8eb7-9adfdfb03a27" />
+<img width="1975" height="1549" alt="NICE-Assesement" src="https://github.com/user-attachments/assets/dfccc257-2e89-45e7-ae33-13e70daab613" />
+
+## Architecture diagram
+<img width="1776" height="1294" alt="untitled (11)" src="https://github.com/user-attachments/assets/8c4dc931-203b-4a15-93ca-8215c5be0b98" />
 
 
 ## Run Locally
