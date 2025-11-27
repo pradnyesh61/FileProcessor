@@ -92,6 +92,10 @@ Please check in the repository - /UploadFiles
 
 https://github.com/pradnyesh61/FileProcessor/tree/main/UploadFiles
 
+## Deployment Process -
+
+https://github.com/pradnyesh61/FileProcessor/tree/main/deploymentProcess
+
 
 
 ## Postman Collection -
