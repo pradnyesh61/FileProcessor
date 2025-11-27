@@ -84,5 +84,15 @@ if test result is not accessible then please check in the repository - /TestResu
 [test_result.pdf](https://github.com/user-attachments/files/23783688/test_result.pdf)
 
 
+## Sample file to upload - 
+Please check in the repository - /UploadFiles
+
+https://github.com/pradnyesh61/FileProcessor/tree/main/UploadFiles
+
+
+
+## Postman Collection -
+https://github.com/pradnyesh61/FileProcessor/tree/main/PostmanCollection
+
 
 
