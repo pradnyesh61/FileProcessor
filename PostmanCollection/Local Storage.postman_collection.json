@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "b31a78b0-5220-4ea9-b696-d2382bc9dfb2",
+		"name": "Local Storage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50381923",
+		"_collection_link": "https://pradnyeshsalunke61-5019379.postman.co/workspace/pradnyesh-salunke's-Workspace~fc18b5ce-1f63-4026-8d89-88678edde4e0/collection/50381923-b31a78b0-5220-4ea9-b696-d2382bc9dfb2?action=share&source=collection_link&creator=50381923"
+	},
+	"item": [
+		{
+			"name": "getFileNames",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/local/v1/files",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"local",
+						"v1",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadFile1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/NICE/FileProcessor/UploadFiles/TestFile1.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/local/v1/file/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"local",
+						"v1",
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadFile2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/NICE/FileProcessor/UploadFiles/TestFile2.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/local/v1/file/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"local",
+						"v1",
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UploadFile3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/NICE/FileProcessor/UploadFiles/TestFile3.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/local/v1/file/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"local",
+						"v1",
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
